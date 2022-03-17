@@ -1,0 +1,140 @@
+.sectionWhite {
+  width: 1706px;
+  height: 100vh;
+  background-color: #3f84e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sectionDark {
+  width: 1706px;
+  height: 100vh;
+  background-color: #1e3657;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainwhite {
+  background-color: #f0e2e7;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainDark {
+  background-color: #1e2019;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.whiteTitle {
+  font-size: 40px;
+  margin-top: 10px;
+}
+.darkTitle {
+  font-size: 40px;
+  margin-top: 10px;
+  color: white;
+}
+
+.whiteInstructions {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+  color: #b20d30;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+.darkInstrunctions {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: center;
+  color: #e2c044;
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+.whiteClicks {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.darkClicks {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-dieContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.roll {
+  background-color: #b20d30;
+  color: white;
+  margin: 40px;
+  width: 9rem;
+  height: 3rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.roll:focus {
+  border: solid 1.5px #1b1e68;
+}
+.roll:active {
+  box-shadow: inset 2px 2px 4px 0px black;
+}
+.Mode-container {
+  width: 40rem;
+  height: 4rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Mode-container .modesWhite {
+  width: 70px;
+  height: 30px;
+  background-color: #000000;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.Mode-container .modesDark {
+  background-color: white;
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.Mode-container .modesWhite .whiteMode {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 2.2px;
+  cursor: pointer;
+  position: relative;
+  left: 0px;
+}
+.Mode-container .modesDark .darkMode {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+  margin: 2.2px;
+  cursor: pointer;
+  position: relative;
+  left: 40px;
+}
