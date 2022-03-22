@@ -102,7 +102,7 @@ function App() {
         {result && (
           <div className={pageMode ? "darkClicks" : "whiteClicks"}>
             <h2>
-              You score is: {clicks} {clicks > 1 ? "Rolls" : "Roll"} And{" "}
+              You score is: {clicks} {clicks > 1 ? "Rolls" : "Roll"} and{" "}
               {time - 1} seconds
             </h2>
           </div>

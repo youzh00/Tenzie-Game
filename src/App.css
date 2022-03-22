@@ -68,11 +68,17 @@
   justify-content: center;
   align-items: center;
 }
+.whiteClicks:hover {
+  color: #3f3f3f;
+}
 .darkClicks {
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.darkClicks:hover {
+  color: #ff9d9d;
 }
 
 .app-dieContainer {
