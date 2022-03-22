@@ -1,5 +1,5 @@
 .sectionWhite {
-  width: 1706px;
+  width: 80rem;
   height: 100vh;
   background-color: #3f84e5;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
 }
 .sectionDark {
-  width: 1706px;
+  width: 80rem;
   height: 100vh;
   background-color: #1e3657;
   display: flex;
@@ -16,8 +16,8 @@
 }
 .mainwhite {
   background-color: #f0e2e7;
-  width: 40rem;
-  height: 40rem;
+  width: 36rem;
+  height: 36rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,8 @@
 }
 .mainDark {
   background-color: #1e2019;
-  width: 40rem;
-  height: 40rem;
+  width: 36rem;
+  height: 36rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -82,7 +82,7 @@
 .roll {
   background-color: #b20d30;
   color: white;
-  margin: 40px;
+  margin: 20px;
   width: 9rem;
   height: 3rem;
   border: none;

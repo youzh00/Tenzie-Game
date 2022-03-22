@@ -3,6 +3,7 @@ import "./App.css";
 import Die from "./Component/Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 function App() {
   function generateNewNum() {
@@ -47,6 +48,7 @@ function App() {
       setResult(false);
       setNumbers(RandomListNums());
       setClicks(0);
+      setTime(0);
     }
   }
   useEffect(() => {
@@ -86,15 +88,7 @@ function App() {
     <section className={pageMode ? "sectionDark" : "sectionWhite"}>
       <main className={pageMode ? "mainDark" : "mainwhite"}>
         <div className="Mode-container">
-          <div
-            className={pageMode ? "modesDark" : "modesWhite"}
-            onClick={toggleMode}
-          >
-            <div
-              className={pageMode ? "darkMode" : "whiteMode"}
-              onClick={toggleMode}
-            ></div>
-          </div>
+          <DarkModeToggle onChange={toggleMode} checked={pageMode} />
         </div>
         {result && (
           <Confetti width={window.innerWidth} height={window.innerHeight} />
@@ -108,8 +102,8 @@ function App() {
         {result && (
           <div className={pageMode ? "darkClicks" : "whiteClicks"}>
             <h2>
-              You score is: {clicks} {clicks > 1 ? "Rolls" : "Roll"} And {time}{" "}
-              seconds
+              You score is: {clicks} {clicks > 1 ? "Rolls" : "Roll"} And{" "}
+              {time - 1} seconds
             </h2>
           </div>
         )}
