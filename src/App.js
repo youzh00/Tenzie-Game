@@ -3,7 +3,6 @@ import "./App.css";
 import Die from "./Component/Die";
 import { nanoid } from "nanoid";
 import Confetti from "react-confetti";
-import { click } from "@testing-library/user-event/dist/click";
 
 function App() {
   function generateNewNum() {
@@ -21,8 +20,6 @@ function App() {
     }
     return numLists;
   }
-
-  // console.log(RandomListNums());
 
   const [numbers, setNumbers] = useState(RandomListNums());
   const [result, setResult] = useState(false);
@@ -64,7 +61,6 @@ function App() {
   function holdNum(id) {
     setNumbers((nums) =>
       nums.map((num) => {
-        // console.log(num.id === id ? { ...num, isHeld: !num.isHeld } : num);
         return num.id === id ? { ...num, isHeld: !num.isHeld } : num;
       })
     );
